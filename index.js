@@ -3,7 +3,7 @@ var app = express();
 app.set("view engine", "ejs");
 app.set("views", "./views");
 app.use(express.static("public"));
-app.listen(process.env.PORT ||3200);
+app.listen();
 var  ObjectIdd = require("mongodb").ObjectId;
 
 var bodyParser = require('body-parser')

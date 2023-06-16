@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<body>
+    <base href="http://localhost:3200/" />
+	<!-- header section start -->
+	<%- include("./blocks/head.ejs") %>
+    <%- include("./blocks/header.ejs") %>
+
+  <!-- about section end -->
+  <!-- product section start -->
+  <div class="product_section layout_padding">
+                <%- include("./pages/"+ page + ".ejs") %>
+  </div>
+  <!-- product section end -->
+  <!-- video section start -->
+ 
+  <!-- contact section end -->
+  <!-- footer section start -->
+  <footer>
+   
+  </footer>
+
+ 
+  <!-- copyright section end -->
+  <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+        });})
+    </script>
+</body>
+<%- include("./blocks/footer.ejs") %>
+</html>

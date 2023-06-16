@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body class="aduvip">
+	<!-- header section start -->
+	<!-- header section end -->
+  <!-- contact section start -->
+  <div class="contact_section layout_padding padding_top_0">
+    <div class="product_text" style="margin-left: -230px;"> Create  <span style="color: #5ca0e9;">a toy</span></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="email_box">
+                    <div class="input_main">
+                       <div class="container">
+                          <form action="" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Name" name="txtName">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Price" name="txtPrice">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Quantity" name="txtQuantity">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="massage-bt" placeholder="Detail" rows="5" id="comment" name="txtDetail"></textarea>
+                            </div>
+                            <div class="form-group">
+                                  <input type="file" class="form-control-file"  name="fileImage">
+                            </div>
+                          
+                       </div> 
+                        <button type="submit" class ="btn btn-primary">Add new item</button>  
+                        <a href="http://localhost:3200/page/item" type="button" style="margin-left: 20px; color: rgb(18, 65, 167);">List of item</a>  
+                    </div>
+                </form>   
+                <% if (typeof message != 'undefined'){ %><h3> <%- message %> </h3><% }  %>
+                 </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="image_6"><img src="images/pixel.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- contact section end -->
+  <!-- copyright section end -->
+  <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+        });})
+    </script>
+</body>
+</html>

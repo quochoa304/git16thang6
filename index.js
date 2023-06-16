@@ -156,7 +156,7 @@ app.get('/delete/(:id)', function(req,res){
   Items.findByIdAndDelete(req.params.id )
   .then(function (Items) {
     console.log(Items);  
-    res.redirect("http://localhost:3200/page/item")
+    res.redirect("/page/item")
   })
   .catch(function (err) {
     console.log(err);
@@ -169,7 +169,7 @@ app.get('/find', function(req,res){
   Items.findOne(req.body.findName )
   .then(function (Items) {
     console.log(Items);  
-    res.redirect("http://localhost:3200/page/find")
+    res.redirect("/page/find")
   })
   .catch(function (err) {
     console.log(err);
@@ -189,7 +189,7 @@ app.post('/update/(:id)', function(req,res){
   Items.findByIdAndUpdate(req.params.id, item )
   .then(function (Items) {
     console.log(Items);  
-    res.redirect("http://localhost:3200/page/item")
+    res.redirect("/page/item")
   })
   .catch(function (err) {
     console.log(err);
